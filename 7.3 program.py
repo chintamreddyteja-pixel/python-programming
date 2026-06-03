@@ -1,0 +1,15 @@
+def pal(s):
+    s=s.lower()
+    if len(s)<=1:
+        return True
+    elif s[0]!=s[-1]:
+        return False
+    else:
+        return pal(s[1:-1])
+
+    myinput=input("enter a string:")
+       
+    if pal(myinput):
+     print(f"{my input}'is a palindrome")
+    else:
+     print(f"{my input}'is not a palindrome")
